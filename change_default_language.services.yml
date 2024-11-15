@@ -1,0 +1,11 @@
+services:
+  change_default_language.language_commands:
+    class: Drupal\change_default_language\Commands\LanguageCommands
+    arguments:
+      - '@entity_type.manager'
+      - '@language.default'
+      - '@language_manager'
+      - '@config.factory'
+      - '@module_handler'
+    tags:
+      - { name: drush.command }

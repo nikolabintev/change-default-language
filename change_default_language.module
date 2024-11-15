@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Module file for Mars module.
+ */
+
+use Drupal\language\Entity\ConfigurableLanguage;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException;
+use Drupal\Component\Plugin\Exception\PluginNotFoundException;
+use Drupal\Core\Entity\EntityStorageException;
+
+
+
+function change_default_language_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  /** @var \Drupal\change_default_language\Commands\LanguageCommands $service */
+  $service = Drupal::service('change_default_language.language_commands');
+//  $service->setDefaultLanguage('en-US', 'English (United States)', \Drupal\Core\Language\LanguageInterface::DIRECTION_LTR);
+
+}

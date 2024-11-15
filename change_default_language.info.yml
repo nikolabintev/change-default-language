@@ -1,0 +1,4 @@
+name: Change default language (Experimental)
+description: This is an experimental module to change the default language of a site with existing content.
+type: module
+core_version_requirement: ^9 || ^10 || ^11
